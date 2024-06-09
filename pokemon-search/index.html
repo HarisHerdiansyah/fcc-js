@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pokeball.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./src/css/style.css" /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pokemon Search</title>
+  </head>
+  <body>
+    <main>
+      <h1>Find your Pokemon</h1>
+      <div id="content">
+        <div class="search">
+          <input
+            type="text"
+            name="pokemon"
+            id="search-input"
+            autocomplete="off"
+            required
+          />
+          <button type="button" id="search-button">Search</button>
+        </div>
+        <div class="basics">
+          <div class="name-and-id">
+            <h2 id="pokemon-name"></h2>
+            <h2 id="pokemon-id"></h2>
+          </div>
+          <article>
+            <p id="weight"></p>
+            <p id="height"></p>
+          </article>
+          <div id="pokemon-sprite"></div>
+          <div id="types"></div>
+        </div>
+        <div class="details">
+          <div class="row">
+            <div>HP :</div>
+            <div class="detail-stats" id="hp"></div>
+          </div>
+          <div class="row">
+            <div>Attack :</div>
+            <div class="detail-stats" id="attack"></div>
+          </div>
+          <div class="row">
+            <div>Defense :</div>
+            <div class="detail-stats" id="defense"></div>
+          </div>
+          <div class="row">
+            <div>Special Attack :</div>
+            <div class="detail-stats" id="special-attack"></div>
+          </div>
+          <div class="row">
+            <div>Special Defense :</div>
+            <div class="detail-stats" id="special-defense"></div>
+          </div>
+          <div class="row">
+            <div>Speed :</div>
+            <div class="detail-stats" id="speed"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script type="module" src="./src/index.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
